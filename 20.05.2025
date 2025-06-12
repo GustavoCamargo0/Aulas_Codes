@@ -1,0 +1,38 @@
+
+    <script>
+     
+
+        let num1 = parseInt(prompt("Digite um numero"))
+        let num2 = parseInt (prompt("Digite um segundo numero"))
+
+        alert("Escolha uma operação: ")
+        alert("Soma [1]")
+        alert("Subtração [2]")
+        alert("Multiplicação [3]")
+        alert("Divisão [4]")
+        alert("Modulo [5]")
+        let escolha = parseInt(prompt("Escolha:"))
+
+        switch (escolha){
+            case 1: 
+                alert(num1 + num2);
+                break;
+            case 2 :
+                alert(num1 - num2);
+                break;
+            case 3 :
+                alert(num1 * num2);
+                break;
+            case 4:
+                alert(num1 / num2);
+                break;
+            case 5:
+                alert(num1 % num2);
+                break;
+            default:
+                alert("Essa opção não existe");
+
+        }
+        
+    </script>
+    
