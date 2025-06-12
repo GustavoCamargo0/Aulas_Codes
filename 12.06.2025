@@ -1,0 +1,39 @@
+HTML:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="add()">Add um Albun</button>
+    <button onclick="rem()">Rem um Albun</button>
+    <div id="texto"></div>
+
+<script src="aula.js"></script>
+</body>
+</html>
+
+JS:
+const albuns = ["Yeezus","Igor","Call Me If You Get Lost","Blonde","Mm..Food","Flower Boy","DAMN.","College Dropout","To Pimp a Butterfly","Donda","Graduation","Ye","V1","V2","Goblin"]
+console.log(albuns)
+
+function add(){
+    albun = prompt("Digite um albun")
+    albuns.push(albun)
+    console.log(albuns)
+    document.getElementById("texto").innerHTML = `<p> ${albuns} </p>`
+}
+
+function rem(){
+    if(albuns.length == 0){
+        alert("Array vazio")
+    }
+    else{
+        albuns.pop()
+        console.log(albuns)
+        document.getElementById("texto").innerHTML = `<p> ${albuns} </p>`
+    }  
+}
