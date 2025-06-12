@@ -1,0 +1,37 @@
+
+const nomes = ["gus","davi","cesar"]
+console.log(nomes[1])
+
+console.log(nomes)
+
+function add(){
+    nome = prompt("Digite seu nome")
+    nomes.push(nome)
+    console.log(nomes)
+}
+function addinicio(){
+    nome = prompt("Digite seu nome")
+    nomes.unshift(nome)
+    console.log(nomes)
+}
+function removefinal(){
+    nomes.pop()
+    console.log(nomes)
+
+}
+function remove(){
+    nomes.shift()
+    console.log(nomes)
+
+}
+function especifico(){
+    posicao = Number(prompt("Escolha a posicao a remover"))
+    nomes[posicao] = null
+    console.log(nomes)
+}
+function dividir(){
+    dividi = nomes.splice(-1)
+    console.log(dividi)
+}
+for(cont of nomes)
+    console.log(cont)
