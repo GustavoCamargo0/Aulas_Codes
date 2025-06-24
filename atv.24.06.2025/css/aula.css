@@ -1,0 +1,18 @@
+#aula{
+    background-color:gray;
+    text-align: center;
+    padding: 100px;
+    width: 300px;
+}
+#aula.passou{
+    background-color:yellow;
+    text-align: center;
+    padding: 100px;
+    width: 300px;
+}
+#aula.clicou{
+    background-color:gray;
+    text-align: center;
+    padding: 100px;
+    width: 300px;
+}
