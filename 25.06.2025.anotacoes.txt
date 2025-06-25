@@ -1,0 +1,117 @@
+	Aula:
+Formula de Potência:
+	P = V * I
+	I = P/V
+	V = P/I
+Formulas da Lei de Ohm:
+	1. I = V/R
+	2. V = R * I
+	3. R = V/I
+Exemplo 1:
+	Dados:
+		V = 6V
+		R = 120Ω
+		I = ?
+	Resolucao:
+		I = 6/120
+		I = 0,05A ou 50mA
+Exemplo 2:
+	Dados:
+		V = 9V
+		I = 300mA
+	Resolucao:
+		R = 9/0,30
+		R = 30R
+Exemplo 3:
+	Dados:
+		I: 100mA
+		R: 22kΩ
+	Resolucao:
+		V = R * I
+		V = 0,10 * 22000
+		V = 2200V ou 2,2kV
+		 
+QuizzZzzZ:
+
+	1. Qual a equação da lei de Ohm?
+	2. Dê as equações e as unidades de medida para corrente, tensão e resistência elétrica, segundo a lei de Ohm
+	3. No circuito abaixo, calcule os valores segundo a lei de Ohm.
+	
+	Respostas:
+		1) 
+		 I = V/R
+		2)
+		 V = R * I
+		 R = V/I
+		3)
+	A) I = 5/330 -> 0,015A
+		 V = 5V
+		 R = 330Ω
+		 I = ?
+		 I = 5/330
+	B) R = 30/0,2 -> 150Ω
+		 V = 30V
+		 R = ?
+		 I = 0,2A
+	C) V = 1200 * 0,015 - > 18V  
+ 		 V = ?
+		 R = 1,2kΩ
+		 I = 15mA
+	D) V = 200 * 0,30 -> 60V
+  		 V = ?
+		 R = 200Ω'
+		 I = 300mA
+	E) R = 12/000000,0125 -> 9,6kΩ 
+		 V = 12V
+		 R = ?
+		 I = 1250uA	 
+	F) I = 60/680 -> 0.088
+		V = 60v
+		R = 680Ω
+		I = ?
+Exemplo 4:
+	V= 6V
+	I = 0,5A
+	P = 6 * 0.5 -> 3W
+Exemplo 5:
+	Dados:
+		R = 8Ω
+		I= 10A
+	Resolucao:
+		P = R * (I*I)
+		P = 8 * (10*10)
+		P = 8 * 100 -> 800W
+Exemplo 6:
+	Dados:
+		V = 12V
+		R = 3Ω
+		P = ?
+	Resolucao:
+		P = (V*V)/R
+		P = (12*12)/3
+		P = 144/3
+		P = 48W
+Exemplo 7:
+	Dados:
+		I = 2A
+		P = 16W
+	Resolucao:
+		V = P/I
+		V = 16/2
+		V = 8V
+QuizzZz 2:
+	1. O que é potência elétrica? qual a sua unidade de medida?
+	2. Dê as equações e as unidades de medida para corrente, tensão e potência elétrica.
+	3. No circuito abaixo, calcule os valores faltantes.
+1) Uma unidade medida que estabelece uma relaçao entre tensao e corrente, medindo geraçao ou gasto de energia e Sua unidade de medida é W (Watts)
+2) Corrente = I, Tensão = V, Potência = W
+   I = P/V
+   V = P/I
+   P = V * I
+3) 
+	A)I = 8/4 -> 2 |P = 8 * 2 -> 16
+ 		V = 8V
+		R = 4Ω
+		I = ?
+		P = ?
+		 
