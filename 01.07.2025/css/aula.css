@@ -1,34 +1,39 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #4A3624;
-    background:linear-gradient(90deg,#BFDDEB,#F5E6C8)
+    background: linear-gradient(90deg, #BFDDEB, #F5E6C8)
 }
-.res{
+
+.res {
     text-align: center;
 }
-.box{
+
+.box {
     padding: 20px;
     background: white;
-    height:250;
+    height: 250;
     border-radius: 20px;
 }
-input{
+
+input {
     border-radius: 5px;
     background-color: #BFDDEB;
-    border-color:2px solid #BFDDEB;
+    border-color: 2px solid #BFDDEB;
     border: none;
     outline: none;
     padding: 5px;
 }
-button{
+
+button {
     background-color: #F5E6C8;
     border-radius: 5px;
     border: none;
     padding: 5px;
 }
-input[type=number]::-webkit-inner-spin-button{ 
-  -webkit-appearance: none; 
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
