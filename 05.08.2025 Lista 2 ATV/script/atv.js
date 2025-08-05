@@ -1,5 +1,19 @@
 // LISTA 2
 
+/* ATIVIDADE 1
+let numfato = Number(prompt("Quantos numeros devem ser lidos?: "))
+let soma = 1
+
+for (let index = 1; index <= numfato; index++){
+    let fato = Number(prompt("Qual o numero a ser fatorado? "))
+    for (fato; fato >= 1 ; fato--) {
+        soma *= fato
+    }
+alert(soma)
+soma = 1
+}
+*/
+
 /* ATIVIDADE 2 
 
 let numlidos = Number(prompt("Quantos numeros serão lidos?"))
@@ -84,4 +98,5 @@ while (num != -1) {
     }
 }
 alert("o maior numero digitado foi: " + maior)
+
 */
