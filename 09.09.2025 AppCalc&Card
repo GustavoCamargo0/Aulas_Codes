@@ -1,0 +1,120 @@
+import { StatusBar } from 'expo-status-bar';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, Alert, ImageBackground } from 'react-native';
+
+function  Solgaleo() {
+  return( 
+  <View style={styles.card}>
+  <Text style={styles.cardtitle}>Solgaleo</Text>
+  <ImageBackground
+    source={{uri: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/791.png'}}
+    style={{width: 150, height: 150}}>
+  </ImageBackground>
+  <Text style={styles.text}>Psiquico e Aço</Text>
+  </View>
+  );
+}
+
+export default function App() {
+  const [num1, setNum1] = useState('');
+  const [num2, setNum2] = useState('');
+  const [resultado, setResultado] = useState(null);
+
+  const somar = () => {
+    const n1 = parseFloat(num1);
+    const n2 = parseFloat(num2);
+
+    if (isNaN(n1) || isNaN(n2)) {
+      Alert.alert('Erro', 'Por favor, insira números válidos');
+      return;
+    }
+
+    setResultado(n1 + n2);
+  };
+
+  function handleTouchablePress() {
+    Alert.alert('Botão pressionado!');
+  }
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        Calculadora
+      </Text>
+    
+      <TextInput 
+      style={styles.input} 
+      placeholder='Digite o primeiro número' 
+      value={num1}
+      onChangeText={setNum1}
+      keyboardType='numeric'
+      />
+      <TextInput 
+      style={styles.input} 
+      placeholder='Digite o segundo número'
+      value={num2}
+      onChangeText={setNum2}
+      keyboardType='numeric'
+      />
+
+      <TouchableOpacity style={styles.butao} onPress={somar}>
+        <Text style={styles.text}>
+          Somar
+        </Text>
+      </TouchableOpacity>
+      <Text style={{fontSize: 20,}}>Resultado: {resultado}</Text>
+      <TouchableOpacity style={styles.butao} onPress={handleTouchablePress}>
+        <Text style={styles.text}>Clica ai</Text>
+      </TouchableOpacity>
+      <Solgaleo/>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  butao: {
+    backgroundColor: 'white',
+    padding: 10,
+    borderRadius: 5,
+    margin: 10,
+    borderWidth: 1, 
+    borderColor: 'black', 
+    borderRadius: 5,
+  },
+  text: {
+    color: 'black',
+  },
+  input: {
+    height: 40,
+    width: 200,
+    margin: 10,
+    borderStyle: 'solid', 
+    borderWidth: 1, 
+    borderColor: 'black', 
+    borderRadius: 5,
+  },
+  title: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  card: {
+    backgroundColor: 'lightblue', 
+    width: 200,
+    height: 250,
+    alignItems: 'center',
+    borderRadius: 10,
+    padding : 10,
+    
+  },
+  cardtitle: {
+    fontSize: 30,
+    fontWeight: 'bold',
+  }
+});
